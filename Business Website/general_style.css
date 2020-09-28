@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   text-align: center;
+  height: 100%;
+  background-color: antiquewhite;
 }
 
 .center {
@@ -10,13 +12,48 @@ body {
 
 nav {
   overflow: hidden;
-  background-color: rgb(48, 46, 46);
+  background-color: rgb(70, 65, 65);
+}
+
+@media only screen and (min-width: 1100px) {
+  .general-width {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+  .general-width {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .general-width {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.content {
+  border: 5px solid rgb(70, 65, 65);
+  border-top: none;
+  padding: 18px 40px;
+  height: 70vh;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
 }
 
 nav a {
   float: left;
   color: #f2f2f2;
-  padding: 14px 20px;
+  padding: 14px 25px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
 }
