@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   text-align: center;
-  height: 100%;
   background-color: antiquewhite;
 }
 
@@ -15,10 +14,26 @@ nav {
   background-color: rgb(70, 65, 65);
 }
 
-@media only screen and (min-width: 1100px) {
+nav a {
+  float: left;
+  color: #f2f2f2;
+  font-weight: 520;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1500px) {
   .general-width {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 28em;
+    margin-right: 28em;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1100px) {
+  .general-width {
+    margin-left: 22em;
+    margin-right: 22em;
   }
 }
 
@@ -31,17 +46,23 @@ nav {
 
 @media only screen and (max-width: 700px) {
   .general-width {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
 }
 
 .content {
   border: 5px solid rgb(70, 65, 65);
   border-top: none;
-  padding: 18px 40px;
+  padding: 25px 40px;
   height: 70vh;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    height: auto;
+  }
 }
 
 .subtitle {
@@ -50,10 +71,7 @@ nav {
   text-align: left;
 }
 
-nav a {
-  float: left;
-  color: #f2f2f2;
-  padding: 14px 25px;
-  text-decoration: none;
-  font-size: 20px;
+.sentence {
+  font-size: 18px;
+  text-align: left;
 }
