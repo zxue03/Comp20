@@ -1,0 +1,39 @@
+song {
+  display: block;
+  border: 4px solid rgb(206, 139, 139);
+  padding: 0.5em;
+  margin: 1.2em;
+}
+
+songList {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 0.5rem 5rem;
+}
+
+heading {
+  display: block;
+  font-size: x-large;
+  font-weight: bold;
+  color: brown;
+}
+
+artist {
+  display: block;
+  color: rgb(124, 47, 160);
+}
+
+title {
+  display: block;
+  color: orangered;
+}
+
+genre {
+  display: block;
+  color: #293ca7;
+}
+
+year {
+  display: block;
+  color: salmon;
+}

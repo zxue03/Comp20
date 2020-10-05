@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="songList.css"?> 
+<songList>
+    <heading>Song List</heading>
+    <song>
+        <artist>Radiohead</artist>
+        <title>Fake Plastic Trees</title>
+        <genre>Alternative/Indie</genre>
+        <year>1995</year>
+    </song>
+
+    <song>
+        <artist>Muse</artist>
+        <title>United States of Eurasia</title>
+        <genre>Progressive metal, Alternative/Indie</genre>
+        <year>2009</year>
+    </song>
+
+    <song>
+        <artist>My Chemical Romance</artist>
+        <title>Welcome to the Black Parade</title>
+        <genre>Alternative/Indie</genre>
+        <year>2006</year>
+    </song>
+
+    <song>
+        <artist>Smashing Pumpkins</artist>
+        <title>Mayonaise</title>
+        <genre>Rock</genre>
+        <year>1993</year>
+    </song>
+
+    <song>
+        <artist>Coldplay</artist>
+        <title>Fix You</title>
+        <genre>Alternative rock, Post-Britpop, Rock</genre>
+        <year>2005</year>
+    </song>
+
+    <song>
+        <artist>Greenday</artist>
+        <title>Wake Me up When September Ends</title>
+        <genre>Alternative/Indie</genre>
+        <year>2004</year>
+    </song>
+
+    <song>
+        <artist>Pink Floyd</artist>
+        <title>Comfortably Numb</title>
+        <genre>Progressive rock</genre>
+        <year>1980</year>
+    </song>
+
+    <song>
+        <artist>Oasis</artist>
+        <title>Comfortably Numb</title>
+        <genre>Alternative/Indie</genre>
+        <year>1995</year>
+    </song>
+
+
+      <song>
+        <artist>X Japan</artist>
+        <title>Endless Rain</title>
+        <genre>Rock</genre>
+        <year>1989</year>
+    </song>
+
+    <song>
+        <artist>Guns N' Roses</artist>
+        <title>Don't Cry</title>
+        <genre>Hard Rock</genre>
+        <year>1991</year>
+    </song>
+
+</songList>
