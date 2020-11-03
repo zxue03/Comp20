@@ -60,7 +60,8 @@ itemQuanTotals.forEach((itemQuanTotal) => {
 
 var validate = () => {
   valid = true;
-  var totalVal = total.value;
+  var phonePattern = /^\d{10}$/;
+  result.innerHTML = "";
   if (document.getElementsByName("fname")[0].value == "") {
     result.innerHTML = "Error:<br>Please enter your first name<br />";
     valid = false;
@@ -69,14 +70,14 @@ var validate = () => {
     result.innerHTML += " Please enter your last name<br />";
     valid = false;
   }
-  if (document.getElementsByName("phone")[0].value == "") {
+  if (!document.getElementsByName("phone")[0].value.match(phonePattern)) {
     result.innerHTML += " Please enter a valid phone number<br />";
     valid = false;
   }
   if (
     document.getElementById("delivery").checked &&
     (document.getElementsByName("street")[0].value == "" ||
-      document.getElementById("city")[0].value == "")
+      document.getElementsByName("city")[0].value == "")
   ) {
     result.innerHTML += " Please enter your address for delivery<br />";
     valid = false;
