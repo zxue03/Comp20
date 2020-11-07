@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      Enter a genre:
+      <select name="genres" id="genres">
+        <option value="Alternative">Alternative</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+      </select>
+      <input type="button" value="filter" onclick="filter()" />
+    </form>
+    <div id="result"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      var songList = null;
+      var filter = () => {
+        var genre = $("#genres").val();
+        $("#result").empty();
+        $("#result").append("<br /> <b>Filtered Song(s):</b> <br />");
+        songList.forEach((song) => {
+          if (song.genre == genre) {
+            $("#result").append(
+              song.artist +
+                "<br />" +
+                song.title +
+                "<br />" +
+                song.genre +
+                "<br />" +
+                song.year +
+                "<br /> <br />"
+            );
+          }
+        });
+      };
+      $(document).ready(() => {
+        $.get("jsonList.json", (data) => {
+          songList = data;
+          $("#result").append(
+            "<br /> <b>Serialize and display:</b> <br />" +
+              JSON.stringify(data) +
+              "<br /> <br />"
+          );
+          $("#result").append("<b>User friendly display:</b> <br />");
+          data.forEach((song) => {
+            $("#result").append(
+              song.artist +
+                "<br />" +
+                song.title +
+                "<br />" +
+                song.genre +
+                "<br />" +
+                song.year +
+                "<br /> <br />"
+            );
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

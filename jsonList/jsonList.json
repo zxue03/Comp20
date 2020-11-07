@@ -1,0 +1,62 @@
+[
+  {
+    "artist": "Radiohead",
+    "title": "Fake Plastic Tree",
+    "genre": "Alternative",
+    "year": "1995"
+  },
+  {
+    "artist": "Muse",
+    "title": "United States of Eurasia",
+    "genre": "Alternative",
+    "year": "2009"
+  },
+  {
+    "artist": "My Chemical Romance",
+    "title": "Welcome to the Black Parade",
+    "genre": "Alternative",
+    "year": "2006"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "title": "Mayonaise",
+    "genre": "Rock",
+    "year": "1993"
+  },
+  {
+    "artist": "Coldplay",
+    "title": "Fix You",
+    "genre": "Pop",
+    "year": "2005"
+  },
+  {
+    "artist": "Greenday",
+    "title": "Wake Me up When September Ends",
+    "genre": "Alternative",
+    "year": "2004"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Comfortably Numb",
+    "genre": "Alternative",
+    "year": "1980"
+  },
+  {
+    "artist": "Oasis",
+    "title": "Don't Look Back in Anger",
+    "genre": "Alternative",
+    "year": "1995"
+  },
+  {
+    "artist": "X Japan",
+    "title": "Endless Rain",
+    "genre": "Rock",
+    "year": "1989"
+  },
+  {
+    "artist": "Guns N' Roses",
+    "title": "Don't Cry",
+    "genre": "Rock",
+    "year": "1991"
+  }
+]

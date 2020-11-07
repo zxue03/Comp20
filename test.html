@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="abc">
+      Enter: <input type="text" name="number" id="num1" />
+      <input type="button" value="submit" onclick="func()" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      var func = () => {
+        console.log(document.abc.number.value);
+      };
+    </script>
+  </body>
+</html>
