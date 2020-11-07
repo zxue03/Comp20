@@ -39,27 +39,30 @@
         });
       };
       $(document).ready(() => {
-        $.get("jsonList.json", (data) => {
-          songList = data;
-          $("#result").append(
-            "<br /> <b>Serialize and display:</b> <br />" +
-              JSON.stringify(data) +
-              "<br /> <br />"
-          );
-          $("#result").append("<b>User friendly display:</b> <br />");
-          data.forEach((song) => {
+        $.get(
+          "https://zxue03.github.io/Comp20/jsonList/jsonList.json",
+          (data) => {
+            songList = data;
             $("#result").append(
-              song.artist +
-                "<br />" +
-                song.title +
-                "<br />" +
-                song.genre +
-                "<br />" +
-                song.year +
+              "<br /> <b>Serialize and display:</b> <br />" +
+                JSON.stringify(data) +
                 "<br /> <br />"
             );
-          });
-        });
+            $("#result").append("<b>User friendly display:</b> <br />");
+            data.forEach((song) => {
+              $("#result").append(
+                song.artist +
+                  "<br />" +
+                  song.title +
+                  "<br />" +
+                  song.genre +
+                  "<br />" +
+                  song.year +
+                  "<br /> <br />"
+              );
+            });
+          }
+        );
       });
     </script>
   </body>
