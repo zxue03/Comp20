@@ -31,12 +31,13 @@
     </script>
 
     <h1>Jade Delight</h1>
-    <form action="jade_delight2.php" onSubmit="return validate()">
+    <form action="jade_delight2.php" method="post" onSubmit="return validate()">
       <p>First Name: <input type="text" name="fname" /></p>
       <p>Last Name*: <input type="text" name="lname" /></p>
       <p id="street">Street: <input type="text" name="street" /></p>
       <p id="city">City: <input type="text" name="city" /></p>
       <p>Phone*: <input type="text" name="phone" /></p>
+      <p>Email*: <input type="email" name="email" /></p>
       <p>
         <input
           type="radio"
@@ -61,7 +62,7 @@
             s += makeSelect("quan" + i, 0, 10);
             s += "</td><td>" + menuItems[i].name + "</td>";
             s += "<td> $ " + menuItems[i].cost.toFixed(2) + "</td>";
-            s += "<td>$<input type='text' name='cost'/></td></tr>";
+            s += "<td>$<input type='text' name='cost[]'/></td></tr>";
           }
           document.writeln(s);
         </script>

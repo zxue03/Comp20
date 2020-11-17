@@ -29,7 +29,7 @@ var result = document.getElementById("result");
 
 for (i = 0; i < menuItems.length; i++) {
   var quan = document.getElementsByName("quan" + i)[0];
-  var costTotal = document.getElementsByName("cost")[i];
+  var costTotal = document.getElementsByName("cost[]")[i];
   costTotal.value = 0;
   var costEach = menuItems[i].cost;
   itemQuanTotals.push(new itemQuanTotal(quan, costEach, costTotal));
@@ -74,6 +74,12 @@ var validate = () => {
     result.innerHTML += " Please enter a valid phone number<br />";
     valid = false;
   }
+
+  if (!document.getElementsByName("email")[0].value) {
+    result.innerHTML += " Please enter an email <br />";
+    valid = false;
+  }
+
   if (
     document.getElementById("delivery").checked &&
     (document.getElementsByName("street")[0].value == "" ||
