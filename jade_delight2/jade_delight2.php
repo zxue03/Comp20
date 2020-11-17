@@ -68,7 +68,7 @@
       <?php
         date_default_timezone_set("America/New_York");
         $orderTime = new DateTime();
-        $msg = "We have received your order! Your total is ${$_POST["total"]}. ";
+        $msg = "We have received your order! Your total is $" . $_POST["total"] . ". ";
         if($_POST["p_or_d"] == "pickup"){
             $wait = new DateInterval('PT15M');
             $orderTime->add($wait);
@@ -83,7 +83,6 @@
             echo $time;
             $msg = $msg . $time;
         }
-        $msg = wordwrap($msg,70);
         mail($_POST["email"], "Thanks for Ordering", $msg);
      ?> 
      
